@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		76D31E642EFE5F7100BC2C80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76D31E422EFE5F6F00BC2C80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76D31E492EFE5F6F00BC2C80;
+			remoteInfo = Proyecto_Cibertec_DAM2;
+		};
+		76D31E6E2EFE5F7100BC2C80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76D31E422EFE5F6F00BC2C80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76D31E492EFE5F6F00BC2C80;
+			remoteInfo = Proyecto_Cibertec_DAM2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		76D31E4A2EFE5F6F00BC2C80 /* Proyecto_Cibertec_DAM2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proyecto_Cibertec_DAM2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D31E632EFE5F7100BC2C80 /* Proyecto_Cibertec_DAM2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Proyecto_Cibertec_DAM2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D31E6D2EFE5F7100BC2C80 /* Proyecto_Cibertec_DAM2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Proyecto_Cibertec_DAM2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		76D31E752EFE5F7100BC2C80 /* Exceptions for "Proyecto_Cibertec_DAM2" folder in "Proyecto_Cibertec_DAM2" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 76D31E492EFE5F6F00BC2C80 /* Proyecto_Cibertec_DAM2 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		76D31E4C2EFE5F6F00BC2C80 /* Proyecto_Cibertec_DAM2 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				76D31E752EFE5F7100BC2C80 /* Exceptions for "Proyecto_Cibertec_DAM2" folder in "Proyecto_Cibertec_DAM2" target */,
+			);
+			path = Proyecto_Cibertec_DAM2;
+			sourceTree = "<group>";
+		};
+		76D31E662EFE5F7100BC2C80 /* Proyecto_Cibertec_DAM2Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Proyecto_Cibertec_DAM2Tests;
+			sourceTree = "<group>";
+		};
+		76D31E702EFE5F7100BC2C80 /* Proyecto_Cibertec_DAM2UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Proyecto_Cibertec_DAM2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76D31E472EFE5F6F00BC2C80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D31E602EFE5F7100BC2C80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D31E6A2EFE5F7100BC2C80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76D31E412EFE5F6F00BC2C80 = {
+			isa = PBXGroup;
+			children = (
+				76D31E4C2EFE5F6F00BC2C80 /* Proyecto_Cibertec_DAM2 */,
+				76D31E662EFE5F7100BC2C80 /* Proyecto_Cibertec_DAM2Tests */,
+				76D31E702EFE5F7100BC2C80 /* Proyecto_Cibertec_DAM2UITests */,
+				76D31E4B2EFE5F6F00BC2C80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76D31E4B2EFE5F6F00BC2C80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76D31E4A2EFE5F6F00BC2C80 /* Proyecto_Cibertec_DAM2.app */,
+				76D31E632EFE5F7100BC2C80 /* Proyecto_Cibertec_DAM2Tests.xctest */,
+				76D31E6D2EFE5F7100BC2C80 /* Proyecto_Cibertec_DAM2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76D31E492EFE5F6F00BC2C80 /* Proyecto_Cibertec_DAM2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76D31E762EFE5F7100BC2C80 /* Build configuration list for PBXNativeTarget "Proyecto_Cibertec_DAM2" */;
+			buildPhases = (
+				76D31E462EFE5F6F00BC2C80 /* Sources */,
+				76D31E472EFE5F6F00BC2C80 /* Frameworks */,
+				76D31E482EFE5F6F00BC2C80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				76D31E4C2EFE5F6F00BC2C80 /* Proyecto_Cibertec_DAM2 */,
+			);
+			name = Proyecto_Cibertec_DAM2;
+			packageProductDependencies = (
+			);
+			productName = Proyecto_Cibertec_DAM2;
+			productReference = 76D31E4A2EFE5F6F00BC2C80 /* Proyecto_Cibertec_DAM2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76D31E622EFE5F7100BC2C80 /* Proyecto_Cibertec_DAM2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76D31E7B2EFE5F7100BC2C80 /* Build configuration list for PBXNativeTarget "Proyecto_Cibertec_DAM2Tests" */;
+			buildPhases = (
+				76D31E5F2EFE5F7100BC2C80 /* Sources */,
+				76D31E602EFE5F7100BC2C80 /* Frameworks */,
+				76D31E612EFE5F7100BC2C80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76D31E652EFE5F7100BC2C80 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				76D31E662EFE5F7100BC2C80 /* Proyecto_Cibertec_DAM2Tests */,
+			);
+			name = Proyecto_Cibertec_DAM2Tests;
+			packageProductDependencies = (
+			);
+			productName = Proyecto_Cibertec_DAM2Tests;
+			productReference = 76D31E632EFE5F7100BC2C80 /* Proyecto_Cibertec_DAM2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		76D31E6C2EFE5F7100BC2C80 /* Proyecto_Cibertec_DAM2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76D31E7E2EFE5F7100BC2C80 /* Build configuration list for PBXNativeTarget "Proyecto_Cibertec_DAM2UITests" */;
+			buildPhases = (
+				76D31E692EFE5F7100BC2C80 /* Sources */,
+				76D31E6A2EFE5F7100BC2C80 /* Frameworks */,
+				76D31E6B2EFE5F7100BC2C80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76D31E6F2EFE5F7100BC2C80 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				76D31E702EFE5F7100BC2C80 /* Proyecto_Cibertec_DAM2UITests */,
+			);
+			name = Proyecto_Cibertec_DAM2UITests;
+			packageProductDependencies = (
+			);
+			productName = Proyecto_Cibertec_DAM2UITests;
+			productReference = 76D31E6D2EFE5F7100BC2C80 /* Proyecto_Cibertec_DAM2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76D31E422EFE5F6F00BC2C80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					76D31E492EFE5F6F00BC2C80 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					76D31E622EFE5F7100BC2C80 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 76D31E492EFE5F6F00BC2C80;
+					};
+					76D31E6C2EFE5F7100BC2C80 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 76D31E492EFE5F6F00BC2C80;
+					};
+				};
+			};
+			buildConfigurationList = 76D31E452EFE5F6F00BC2C80 /* Build configuration list for PBXProject "Proyecto_Cibertec_DAM2" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76D31E412EFE5F6F00BC2C80;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 76D31E4B2EFE5F6F00BC2C80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76D31E492EFE5F6F00BC2C80 /* Proyecto_Cibertec_DAM2 */,
+				76D31E622EFE5F7100BC2C80 /* Proyecto_Cibertec_DAM2Tests */,
+				76D31E6C2EFE5F7100BC2C80 /* Proyecto_Cibertec_DAM2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76D31E482EFE5F6F00BC2C80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D31E612EFE5F7100BC2C80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D31E6B2EFE5F7100BC2C80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76D31E462EFE5F6F00BC2C80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D31E5F2EFE5F7100BC2C80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D31E692EFE5F7100BC2C80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76D31E652EFE5F7100BC2C80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76D31E492EFE5F6F00BC2C80 /* Proyecto_Cibertec_DAM2 */;
+			targetProxy = 76D31E642EFE5F7100BC2C80 /* PBXContainerItemProxy */;
+		};
+		76D31E6F2EFE5F7100BC2C80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76D31E492EFE5F6F00BC2C80 /* Proyecto_Cibertec_DAM2 */;
+			targetProxy = 76D31E6E2EFE5F7100BC2C80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		76D31E772EFE5F7100BC2C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Proyecto_Cibertec_DAM2/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pe.com.cibertecT1.Proyecto-Cibertec-DAM2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76D31E782EFE5F7100BC2C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Proyecto_Cibertec_DAM2/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pe.com.cibertecT1.Proyecto-Cibertec-DAM2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		76D31E792EFE5F7100BC2C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76D31E7A2EFE5F7100BC2C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76D31E7C2EFE5F7100BC2C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pe.com.cibertecT1.Proyecto-Cibertec-DAM2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Proyecto_Cibertec_DAM2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Proyecto_Cibertec_DAM2";
+			};
+			name = Debug;
+		};
+		76D31E7D2EFE5F7100BC2C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pe.com.cibertecT1.Proyecto-Cibertec-DAM2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Proyecto_Cibertec_DAM2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Proyecto_Cibertec_DAM2";
+			};
+			name = Release;
+		};
+		76D31E7F2EFE5F7100BC2C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pe.com.cibertecT1.Proyecto-Cibertec-DAM2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Proyecto_Cibertec_DAM2;
+			};
+			name = Debug;
+		};
+		76D31E802EFE5F7100BC2C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pe.com.cibertecT1.Proyecto-Cibertec-DAM2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Proyecto_Cibertec_DAM2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76D31E452EFE5F6F00BC2C80 /* Build configuration list for PBXProject "Proyecto_Cibertec_DAM2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76D31E792EFE5F7100BC2C80 /* Debug */,
+				76D31E7A2EFE5F7100BC2C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76D31E762EFE5F7100BC2C80 /* Build configuration list for PBXNativeTarget "Proyecto_Cibertec_DAM2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76D31E772EFE5F7100BC2C80 /* Debug */,
+				76D31E782EFE5F7100BC2C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76D31E7B2EFE5F7100BC2C80 /* Build configuration list for PBXNativeTarget "Proyecto_Cibertec_DAM2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76D31E7C2EFE5F7100BC2C80 /* Debug */,
+				76D31E7D2EFE5F7100BC2C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76D31E7E2EFE5F7100BC2C80 /* Build configuration list for PBXNativeTarget "Proyecto_Cibertec_DAM2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76D31E7F2EFE5F7100BC2C80 /* Debug */,
+				76D31E802EFE5F7100BC2C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76D31E422EFE5F6F00BC2C80 /* Project object */;
+}
