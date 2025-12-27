@@ -15,7 +15,8 @@ class AudioPlayerManager: NSObject {
     private var playerItem: AVPlayerItem?
 
     var isPlaying: Bool {
-        return player?.rate != 0 && player?.error == nil
+        guard let player = player else { return false }
+        return player.rate > 0 && player.error == nil
     }
 
     // Tiempo actual de reproducción en segundos
@@ -92,16 +93,20 @@ class AudioPlayerManager: NSObject {
 
     func pause() {
         player?.pause()
+        print("⏸️ Audio pausado - Rate: \(player?.rate ?? -1)")
     }
 
     func resume() {
         player?.play()
+        print("▶️ Audio reanudado - Rate: \(player?.rate ?? -1)")
     }
 
     func stop() {
+        NotificationCenter.default.removeObserver(self)
         player?.pause()
         player = nil
         playerItem = nil
+        print("⏹️ Audio detenido completamente")
     }
 
     func togglePlayPause() {

@@ -53,6 +53,8 @@ class TrackDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("🎬 TrackDetailViewController cargado")
+        print("🔍 Estado inicial: isPlaying = \(AudioPlayerManager.shared.isPlaying)")
         setupProgressUI()
         setupUI()
         checkFavoriteStatus()
@@ -176,7 +178,10 @@ class TrackDetailViewController: UIViewController {
     }
 
     @IBAction func playButtonTapped(_ sender: UIButton) {
-        if AudioPlayerManager.shared.isPlaying {
+        let isCurrentlyPlaying = AudioPlayerManager.shared.isPlaying
+        print("🔍 Estado actual: isPlaying = \(isCurrentlyPlaying), isTrackLoaded = \(isTrackLoaded)")
+
+        if isCurrentlyPlaying {
             // Pausar reproducción
             print("⏸️ Pausando reproducción")
             AudioPlayerManager.shared.pause()
@@ -186,6 +191,7 @@ class TrackDetailViewController: UIViewController {
             if !isTrackLoaded {
                 // Primera vez - cargar y reproducir
                 print("🎵 Cargando track por primera vez")
+                print("📍 URL: \(track.preview)")
                 AudioPlayerManager.shared.play(url: track.preview)
                 isTrackLoaded = true
             } else {
