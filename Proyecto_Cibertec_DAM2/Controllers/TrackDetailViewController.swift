@@ -20,6 +20,7 @@ class TrackDetailViewController: UIViewController {
     var track: Track!
     private var isFavorite: Bool = false
     private var progressTimer: Timer?
+    private var isTrackLoaded: Bool = false
 
     // Elementos de progreso creados programáticamente
     private let progressView: UIProgressView = {
@@ -62,6 +63,8 @@ class TrackDetailViewController: UIViewController {
         super.viewWillDisappear(animated)
         stopProgressTimer()
         AudioPlayerManager.shared.stop()
+        isTrackLoaded = false
+        resetProgress()
     }
 
     private func setupProgressUI() {
@@ -72,17 +75,18 @@ class TrackDetailViewController: UIViewController {
 
         // Configurar constraints
         NSLayoutConstraint.activate([
-            // Progress View - debajo del albumLabel
-            progressView.topAnchor.constraint(equalTo: albumLabel.bottomAnchor, constant: 20),
+            // Progress View - debajo del albumLabel con más espacio
+            progressView.topAnchor.constraint(equalTo: albumLabel.bottomAnchor, constant: 40),
             progressView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             progressView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            progressView.heightAnchor.constraint(equalToConstant: 4),
 
             // Current Time Label - abajo izquierda del progressView
-            currentTimeLabel.topAnchor.constraint(equalTo: progressView.bottomAnchor, constant: 4),
+            currentTimeLabel.topAnchor.constraint(equalTo: progressView.bottomAnchor, constant: 8),
             currentTimeLabel.leadingAnchor.constraint(equalTo: progressView.leadingAnchor),
 
             // Remaining Time Label - abajo derecha del progressView
-            remainingTimeLabel.topAnchor.constraint(equalTo: progressView.bottomAnchor, constant: 4),
+            remainingTimeLabel.topAnchor.constraint(equalTo: progressView.bottomAnchor, constant: 8),
             remainingTimeLabel.trailingAnchor.constraint(equalTo: progressView.trailingAnchor)
         ])
     }
@@ -123,6 +127,7 @@ class TrackDetailViewController: UIViewController {
                 self?.playButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
                 self?.stopProgressTimer()
                 self?.resetProgress()
+                self?.isTrackLoaded = false
             }
         }
     }
@@ -144,6 +149,11 @@ class TrackDetailViewController: UIViewController {
         let progress = AudioPlayerManager.shared.progress
         let currentTime = AudioPlayerManager.shared.currentTime
         let duration = AudioPlayerManager.shared.duration
+
+        // Debug: Imprimir valores cada 1 segundo (cuando el segundo cambia)
+        if Int(currentTime) != Int(currentTime - 0.1) {
+            print("⏱️ Progreso: \(String(format: "%.2f", progress)) | Tiempo: \(Int(currentTime))s / \(Int(duration))s")
+        }
 
         progressView.progress = progress
 
@@ -167,11 +177,22 @@ class TrackDetailViewController: UIViewController {
 
     @IBAction func playButtonTapped(_ sender: UIButton) {
         if AudioPlayerManager.shared.isPlaying {
+            // Pausar reproducción
+            print("⏸️ Pausando reproducción")
             AudioPlayerManager.shared.pause()
             playButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
             stopProgressTimer()
         } else {
-            AudioPlayerManager.shared.play(url: track.preview)
+            if !isTrackLoaded {
+                // Primera vez - cargar y reproducir
+                print("🎵 Cargando track por primera vez")
+                AudioPlayerManager.shared.play(url: track.preview)
+                isTrackLoaded = true
+            } else {
+                // Reanudar reproducción
+                print("▶️ Reanudando reproducción")
+                AudioPlayerManager.shared.resume()
+            }
             playButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
             startProgressTimer()
         }

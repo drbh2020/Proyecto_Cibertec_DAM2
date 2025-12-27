@@ -20,12 +20,16 @@ class AudioPlayerManager: NSObject {
 
     // Tiempo actual de reproducción en segundos
     var currentTime: Double {
-        return player?.currentTime().seconds ?? 0
+        guard let player = player else { return 0 }
+        let time = CMTimeGetSeconds(player.currentTime())
+        return time.isNaN ? 0 : time
     }
 
     // Duración total del audio en segundos
     var duration: Double {
-        return playerItem?.duration.seconds ?? 0
+        guard let playerItem = playerItem else { return 0 }
+        let time = CMTimeGetSeconds(playerItem.duration)
+        return time.isNaN ? 0 : time
     }
 
     // Progreso de 0.0 a 1.0
