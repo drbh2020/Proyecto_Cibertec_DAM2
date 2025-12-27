@@ -18,6 +18,24 @@ class AudioPlayerManager: NSObject {
         return player?.rate != 0 && player?.error == nil
     }
 
+    // Tiempo actual de reproducción en segundos
+    var currentTime: Double {
+        return player?.currentTime().seconds ?? 0
+    }
+
+    // Duración total del audio en segundos
+    var duration: Double {
+        return playerItem?.duration.seconds ?? 0
+    }
+
+    // Progreso de 0.0 a 1.0
+    var progress: Float {
+        let current = currentTime
+        let total = duration
+        guard total > 0 else { return 0 }
+        return Float(current / total)
+    }
+
     var onPlaybackFinished: (() -> Void)?
 
     private override init() {
@@ -35,7 +53,12 @@ class AudioPlayerManager: NSObject {
     }
 
     func play(url: String) {
-        guard let audioURL = URL(string: url) else { return }
+        guard let audioURL = URL(string: url) else {
+            print("❌ Error: URL de audio inválida")
+            return
+        }
+
+        print("🎵 Reproduciendo: \(audioURL)")
 
         // Detener reproducción anterior
         stop()
@@ -51,7 +74,16 @@ class AudioPlayerManager: NSObject {
             object: playerItem
         )
 
+        // Observer para errores
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(playerDidFailToPlay),
+            name: .AVPlayerItemFailedToPlayToEndTime,
+            object: playerItem
+        )
+
         player?.play()
+        print("▶️ Reproducción iniciada")
     }
 
     func pause() {
@@ -77,6 +109,13 @@ class AudioPlayerManager: NSObject {
     }
 
     @objc private func playerDidFinishPlaying() {
+        print("✅ Reproducción terminada")
         onPlaybackFinished?()
+    }
+
+    @objc private func playerDidFailToPlay(notification: Notification) {
+        if let error = notification.userInfo?[AVPlayerItemFailedToPlayToEndTimeErrorKey] as? Error {
+            print("❌ Error en reproducción: \(error.localizedDescription)")
+        }
     }
 }
