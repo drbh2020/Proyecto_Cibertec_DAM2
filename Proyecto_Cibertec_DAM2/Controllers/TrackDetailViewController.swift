@@ -16,9 +16,9 @@ class TrackDetailViewController: UIViewController {
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var favoriteButton: UIButton!
-    @IBOutlet weak var progressView: UIProgressView!
-    @IBOutlet weak var currentTimeLabel: UILabel!
-    @IBOutlet weak var remainingTimeLabel: UILabel!
+    @IBOutlet weak var progressView: UIProgressView?
+    @IBOutlet weak var currentTimeLabel: UILabel?
+    @IBOutlet weak var remainingTimeLabel: UILabel?
 
     var track: Track!
     private var isFavorite: Bool = false
@@ -47,14 +47,14 @@ class TrackDetailViewController: UIViewController {
         coverImageView.layer.cornerRadius = 10
         coverImageView.clipsToBounds = true
 
-        // Configurar barra de progreso
-        progressView.progress = 0
-        progressView.progressTintColor = .systemBlue
-        progressView.trackTintColor = .systemGray5
+        // Configurar barra de progreso (opcional, solo si está conectada)
+        progressView?.progress = 0
+        progressView?.progressTintColor = .systemBlue
+        progressView?.trackTintColor = .systemGray5
 
-        // Inicializar labels de tiempo
-        currentTimeLabel.text = "0:00"
-        remainingTimeLabel.text = "-\(track.durationFormatted)"
+        // Inicializar labels de tiempo (opcional, solo si están conectados)
+        currentTimeLabel?.text = "0:00"
+        remainingTimeLabel?.text = "-\(track.durationFormatted)"
 
         // Cargar imagen
         if let coverURL = track.album.coverMedium {
@@ -101,24 +101,24 @@ class TrackDetailViewController: UIViewController {
         let currentTime = AudioPlayerManager.shared.currentTime
         let duration = AudioPlayerManager.shared.duration
 
-        progressView.progress = progress
+        progressView?.progress = progress
 
         // Actualizar tiempo actual
         let currentMinutes = Int(currentTime) / 60
         let currentSeconds = Int(currentTime) % 60
-        currentTimeLabel.text = String(format: "%d:%02d", currentMinutes, currentSeconds)
+        currentTimeLabel?.text = String(format: "%d:%02d", currentMinutes, currentSeconds)
 
         // Actualizar tiempo restante
         let remaining = duration - currentTime
         let remainingMinutes = Int(remaining) / 60
         let remainingSeconds = Int(remaining) % 60
-        remainingTimeLabel.text = String(format: "-%d:%02d", remainingMinutes, remainingSeconds)
+        remainingTimeLabel?.text = String(format: "-%d:%02d", remainingMinutes, remainingSeconds)
     }
 
     private func resetProgress() {
-        progressView.progress = 0
-        currentTimeLabel.text = "0:00"
-        remainingTimeLabel.text = "-\(track.durationFormatted)"
+        progressView?.progress = 0
+        currentTimeLabel?.text = "0:00"
+        remainingTimeLabel?.text = "-\(track.durationFormatted)"
     }
 
     @IBAction func playButtonTapped(_ sender: UIButton) {
